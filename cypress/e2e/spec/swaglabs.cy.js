@@ -16,7 +16,7 @@ describe('test Assignment',()=>{
         cy.get("[data-test='error']").should("exist")
     })
 
-    it.only('Test Scenario 2',()=>{
+    it('Test Scenario 2',()=>{
         loginPage.login("standard_user","secret_sauce")
         homePage.addProductInCart()
         homePage.navigateCart()
